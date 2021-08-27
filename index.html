@@ -389,7 +389,7 @@
                 <p class="footer-disription">Подпишитесь на рассылку</p>
                 <form class="email">
                     <input type="email" name="mail" placeholder="E-Mail" id="mail" class="email__box">                    
-                    <button class="primary-button" type="submit">Подписаться
+                    <button class="email__button primary-button" type="submit">Подписаться
                         <svg class="email__icon">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
@@ -408,41 +408,41 @@
             <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="form">
                 <div class="form-group">
-                    <label for="name">Имя</label>   
+                    <label class="form-group__label" for="name">Имя</label>   
                     <div class="input-group-absolute">
-                        <input type="text" name="name" id="name">
+                        <input class="form-group__input" type="text" name="name" id="name">
                         <svg class="form__icon">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="tel">Телефон</label>
+                    <label class="form-group__label" for="tel">Телефон</label>
                     <div class="input-group-absolute">
-                        <input type="tel" name="tel" id="tel">
+                        <input class="form-group__input" type="tel" name="tel" id="tel">
                         <svg class="form__icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="mail">Почта</label>
+                    <label class="form-group__label" for="mail">Почта</label>
                     <div class="input-group-absolute">
-                        <input type="email" name="mail" id="mail">
+                        <input class="form-group__input" type="email" name="mail" id="mail">
                         <svg class="form__icon">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="form-group comment">
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                    <label class="form-group__label" for="comment">Комментарий</label>
+                    <textarea class="form-group__comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="form-checkbox">
-                    <input class="checkbox" type="checkbox" name="policy" id="policy">
-                    <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
+                <div class="checkbox">
+                    <input class="checkbox__label" type="checkbox" name="policy" id="policy">
+                    <label class="checkbox__policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
                 </div>
-                <div class="form-btn">
+                <div class="form__btn">
                     <button type="submit" class="primary-button">Отправить</button>
                 </div>
             </form>
