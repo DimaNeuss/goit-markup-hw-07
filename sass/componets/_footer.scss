@@ -12,7 +12,7 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
   }
 }
 .footer-link {
@@ -30,13 +30,13 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    fill: var(--whitе-color-text);
-    background-color: var(--background-footer-link);
-    transition: background-color 250ms var(--timing-function);
+    fill: $whitе-color-text;
+    background-color: $background-footer-link;
+    transition: background-color 250ms $timing-function;
   }
   &__icon:hover,
   &__icon:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
@@ -49,6 +49,6 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
   }
 }

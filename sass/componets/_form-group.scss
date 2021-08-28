@@ -6,7 +6,7 @@
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.2;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
   &__input {
     width: 100%;
@@ -18,38 +18,37 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: border 250ms var(--timing-function),
-      fill 250ms var(--timing-function);
+    transition: border 250ms $timing-function, fill 250ms $timing-function;
   }
   &__input:hover,
   &__input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
   &__input:hover + .form__icon,
   &__input:focus + .form__icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   &__input:focus-within {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    fill: $accent-color;
+    border: 1px solid $accent-color;
   }
   &__comment {
     padding: 12px 16px;
     font-size: 12px;
     line-height: 1.2;
-    color: var(--primary-text-color);
-    transition: border 250ms var(--timing-function);
+    color: $primary-text-color;
+    transition: border 250ms $timing-function;
     resize: none;
   }
   &__comment:hover,
   &__comment:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     box-sizing: border-box;
     border-radius: 4px;
   }
   &__comment:focus-within {
     outline: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 }
 .form {
@@ -59,7 +58,7 @@
     left: 10px;
     width: 18px;
     height: 18px;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
   }
   &__btn {
     text-align: center;

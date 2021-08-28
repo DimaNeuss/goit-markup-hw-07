@@ -1,6 +1,6 @@
 body {
-  background-color: var(--whitе-color-text);
-  color: var(--text-color);
+  background-color: $whitе-color-text;
+  color: $text-color;
   font-family: Roboto, Arial, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -32,11 +32,11 @@ a {
   align-items: center;
 }
 .footer {
-  background: var(--background-color);
+  background: $background-color;
   padding: 60px 0;
 }
 .title {
-  color: var(--text-color);
+  color: $text-color;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;

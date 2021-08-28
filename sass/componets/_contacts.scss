@@ -5,20 +5,19 @@
   align-items: center;
 }
 .contacts__link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   font-style: normal;
   display: flex;
   align-items: center;
-  fill: var(--primary-text-color);
-  transition: color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  fill: $primary-text-color;
+  transition: color 250ms $timing-function, fill 250ms $timing-function;
   &:hover,
   &:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
   }
   &__link:last-child {
     margin-left: 50px;
@@ -30,21 +29,21 @@
 /*коннтакты footer*/
 .contacts-footer {
   &__link {
-    background: var(--background-color);
-    color: var(--color-contacts-footer-link);
+    background: $background-color;
+    color: $color-contacts-footer-link;
     font-size: 14px;
     font-style: normal;
     line-height: 1.8;
     margin-top: 9px;
     display: inline-block;
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   &__address {
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.8;

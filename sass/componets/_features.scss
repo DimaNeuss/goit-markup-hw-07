@@ -10,7 +10,7 @@
     margin-bottom: 10px;
   }
   &__text {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.8;
@@ -24,7 +24,7 @@
   }
   &__icon {
     padding: 25px 100px;
-    background: var(--filter__background-color);
+    background: $filter__background-color;
     border-radius: 4px;
     margin-bottom: 30px;
   }

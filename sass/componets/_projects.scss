@@ -1,6 +1,6 @@
 /*проекты*/
 .projects {
-  color: var(--text-color);
+  color: $text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -12,10 +12,10 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    color: var(--second-color);
+    color: $second-color;
   }
   &__description {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-size: 16px;
     line-height: 1.8;
   }
@@ -32,14 +32,14 @@
     flex-basis: calc(100% / 3 - 30px);
   }
   &__box {
-    border: 1px solid var(--projects-bgc);
+    border: 1px solid $projects-bgc;
     border-top: none;
     padding: 20px 24px;
   }
   &__link {
     position: relative;
     display: block;
-    transition: box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms $timing-function;
   }
   &__link:hover,
   &__link:focus {
@@ -52,9 +52,9 @@
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: var(--background-projects);
+    background-color: $background-projects;
     transform: translateY(0);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
   }
   &__link:hover &__overlay {
     transform: translateY(-100%);
@@ -64,7 +64,7 @@
     overflow: hidden;
   }
   &__text {
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
     font-weight: 400;
     padding: 63px 24px;
     letter-spacing: 0.03em;

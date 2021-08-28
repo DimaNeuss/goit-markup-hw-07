@@ -1,14 +1,14 @@
 .logo {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   &__text {
-    color: var(--text-color);
+    color: $text-color;
   }
   &__footer {
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
   }
 }
 .footer-logo {

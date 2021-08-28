@@ -9,13 +9,13 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    fill: var(--fill-icon);
-    transition: background-color 250ms var(--timing-function),
-      fill 250ms var(--timing-function);
+    fill: $fill-icon;
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
   }
   &__icon:hover,
   &__icon:focus {
-    background-color: var(--accent-color);
-    fill: var(--whitе-color-text);
+    background-color: $accent-color;
+    fill: $whitе-color-text;
   }
 }

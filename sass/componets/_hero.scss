@@ -1,6 +1,6 @@
 /* Hero*/
 .hero {
-  background-color: var(--background-color);
+  background-color: $background-color;
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
@@ -8,16 +8,16 @@
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
-      var(--background-image-color),
-      var(--background-image-color),
-      var(--background-image-color)
+      $background-image-color,
+      $background-image-color,
+      $background-image-color
     ),
     url(../images/new-Img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   &__title {
-    color: var(--whitе-color-text);
+    color: $whitе-color-text;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;

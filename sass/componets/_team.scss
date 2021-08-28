@@ -3,7 +3,7 @@
   margin-bottom: 50px;
 }
 .section-team {
-  background: var(--filter__background-color);
+  background: $filter__background-color;
 }
 .team {
   &__name {
@@ -11,11 +11,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    color: var(--second-color);
+    color: $second-color;
     text-transform: uppercase;
   }
   &__position {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
@@ -25,6 +25,27 @@
   &__decryption {
     padding: 30px 0;
     border-radius: 0px 0px 4px 4px;
-    background-color: var(--whitе-color-text);
+    background-color: $whitе-color-text;
+  }
+}
+.social-link {
+  display: flex;
+  padding: 16px 32px 0 32px;
+  &__icon {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: $fill-icon;
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    background-color: $accent-color;
+    fill: $whitе-color-text;
   }
 }
