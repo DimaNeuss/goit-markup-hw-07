@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-team {
+  background: var(--filter__background-color);
+}
+.team {
+  &__name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--second-color);
+    text-transform: uppercase;
+  }
+  &__position {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 10px;
+  }
+  &__decryption {
+    padding: 30px 0;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--whitе-color-text);
+  }
+}

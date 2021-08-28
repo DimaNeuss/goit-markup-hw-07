@@ -332,6 +332,7 @@ a {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
   fill: var(--fill-icon);
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
@@ -735,7 +736,7 @@ input {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.projets__hover {
+.projects__hover {
   position: relative;
   overflow: hidden;
 }
@@ -752,7 +753,7 @@ input {
 .projects__link:hover .projects__overlay {
   transform: translateY(-100%);
 }
-.projets__text {
+.projects__text {
   color: var(--whitе-color-text);
   font-weight: 400;
   padding: 63px 24px;

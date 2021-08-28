@@ -1,0 +1,16 @@
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  &__text {
+    color: var(--text-color);
+  }
+  &__footer {
+    color: var(--whitе-color-text);
+  }
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
