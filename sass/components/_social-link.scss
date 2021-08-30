@@ -1,27 +1,21 @@
 .social-link {
-  display: flex;
+  @extend %flex;
   justify-content: center;
   padding: 16px 32px 0 32px;
   &--footer {
     padding: 0;
   }
-  &__item {
-    margin-right: 10px;
-  }
   &__item:last-child {
     margin-right: 0;
   }
   &__icon {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+    @extend %flex;
+    @extend %social-icon;
     fill: $fill-icon;
-    transition: background-color 250ms $timing-function,
-      fill 250ms $timing-function;
+    transition: background-color 250ms $timing-function;
+    transition: transform 250ms $timing-function;
+    @include transition(background-color);
+    @include transition(fill);
   }
   &__icon:hover,
   &__icon:focus {

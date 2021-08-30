@@ -1,6 +1,6 @@
 /*коннтакты*/
 .contacts {
-  display: flex;
+  @extend %flex;
   margin-left: auto;
   align-items: center;
   &__icon {
@@ -8,14 +8,13 @@
   }
   &__link {
     color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
+    @include style(500, 14px, 1.1);
     font-style: normal;
-    display: flex;
+    @extend %flex;
     align-items: center;
     fill: $primary-text-color;
-    transition: color 250ms $timing-function, fill 250ms $timing-function;
+    transition: fill 250ms $timing-function;
+    transition: color 250ms $timing-function;
   }
 }
 .contacts__link:hover,
@@ -32,9 +31,8 @@
   &__link {
     background: $background-color;
     color: $color-contacts-footer-link;
-    font-size: 14px;
+    @include style(400, 14px, 1.8);
     font-style: normal;
-    line-height: 1.8;
     margin-top: 9px;
     display: inline-block;
     transition: color 250ms $timing-function;
@@ -45,9 +43,7 @@
   }
   &__address {
     color: $whitе-color-text;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.8;
+    @include style(400, 14px, 1.8);
     font-style: normal;
   }
 }

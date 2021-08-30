@@ -1,6 +1,6 @@
 /* портфолио*/
 .filter {
-  display: flex;
+  @extend %flex;
   justify-content: center;
   margin-bottom: 50px;
   & .filter-element:not(:first-child) {

@@ -1,5 +1,5 @@
 body {
-  background-color: "$whitе-color-text";
+  background-color: $whitе-color-text;
   color: $text-color;
   font-family: Roboto, Arial, sans-serif;
   letter-spacing: 0.03em;
@@ -28,7 +28,7 @@ a {
 }
 
 .header {
-  display: flex;
+  @extend %flex;
   align-items: center;
 }
 

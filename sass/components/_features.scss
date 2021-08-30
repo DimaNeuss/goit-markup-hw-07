@@ -1,19 +1,15 @@
 /*особенности*/
 .features {
-  display: flex;
+  @extend %flex;
   justify-content: space-between;
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    @include style(700, 14px, 1.2);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   &__text {
     color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.8;
+    @include style(500, 14px, 1.8);
   }
   &__item {
     flex-wrap: wrap;

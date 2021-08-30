@@ -475,9 +475,7 @@ input {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.1);
-}
+
 .modal {
   padding: 40px;
   width: 528px;

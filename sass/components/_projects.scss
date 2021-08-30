@@ -1,30 +1,24 @@
 /*проекты*/
 .projects {
   color: $text-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  display: flex;
+  @include style(700, 18px, 2);
+  @extend %flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
   &__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include style(700, 18px, 2);
     color: $second-color;
   }
   &__description {
     color: $primary-text-color;
-    font-size: 16px;
-    line-height: 1.8;
+    @include style(400, 16px, 1.8);
   }
   &__title {
     letter-spacing: 0.06em;
   }
   &__description {
-    font-size: 16px;
-    line-height: 1.8;
+    @include style(400, 16px, 1.8);
     margin-top: 8px;
   }
   &__item {
@@ -32,14 +26,14 @@
     flex-basis: calc(100% / 3 - 30px);
   }
   &__box {
-    border: 1px solid $projects-bgc;
+    @include border(1px, $projects-bgc);
     border-top: none;
     padding: 20px 24px;
   }
   &__link {
     position: relative;
     display: block;
-    transition: box-shadow 250ms $timing-function;
+    @include transition(box-shadow);
   }
   &__link:hover,
   &__link:focus {
@@ -50,7 +44,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    display: flex;
+    @extend %flex;
     align-items: center;
     background-color: $background-projects;
     transform: translateY(0);

@@ -2,8 +2,7 @@
   margin: 20px 0 30px 12px;
   &__label {
     display: inline-block;
-    font-size: 14px;
-    line-height: 1.8;
+    @include style(400, 14px, 1.8);
     color: $primary-text-color;
     letter-spacing: 0.03em;
     appearance: none;
@@ -15,9 +14,10 @@
     width: 16px;
     height: 15px;
     margin-right: 8px;
-    border: 2px solid $second-color;
+    @include border(2px, $second-color);
     border-radius: 4px;
-    transition: background 250ms $timing-function, border 250ms $timing-function;
+    transition: background-color 250ms $timing-function;
+    transition: border 250ms $timing-function;
   }
   &__label:checked + &__policy::before {
     border-color: $accent-color;

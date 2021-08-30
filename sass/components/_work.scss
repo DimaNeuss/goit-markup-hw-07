@@ -1,5 +1,5 @@
 .work {
-  display: flex;
+  @extend %flex;
   flex-basis: calc(100% / 3);
   justify-content: space-between;
   padding-top: 0px;
@@ -14,9 +14,7 @@
     background-color: $background-icon-work;
   }
   &__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    @include style(700, 14px, 1.2);
     text-align: center;
     text-transform: uppercase;
     color: $whitе-color-text;

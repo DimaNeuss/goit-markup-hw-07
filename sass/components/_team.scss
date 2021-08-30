@@ -1,20 +1,16 @@
 /*Наша команда*/
 .team {
-  display: flex;
+  @extend %flex;
   justify-content: space-between;
   &__name {
     text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+    @include style(500, 16px, 1.2);
     color: $second-color;
     text-transform: uppercase;
   }
   &__position {
     color: $primary-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
+    @include style(400, 16px, 1.2);
     text-align: center;
     padding-top: 10px;
   }

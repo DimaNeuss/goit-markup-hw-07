@@ -1,9 +1,7 @@
 .logo {
   color: $accent-color;
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  @include style(700, 26px, 1.2);
   &--dark {
     color: $text-color;
   }
