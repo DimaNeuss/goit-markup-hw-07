@@ -1,11 +1,7 @@
-.title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.section-team {
-  background: $filter__background-color;
-}
+/*Наша команда*/
 .team {
+  display: flex;
+  justify-content: space-between;
   &__name {
     text-align: center;
     font-weight: 500;
@@ -27,25 +23,12 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $whitе-color-text;
   }
-}
-.social-link {
-  display: flex;
-  padding: 16px 32px 0 32px;
-  &__icon {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    fill: $fill-icon;
-    transition: background-color 250ms $timing-function,
-      fill 250ms $timing-function;
-  }
-  &__icon:hover,
-  &__icon:focus {
-    background-color: $accent-color;
-    fill: $whitе-color-text;
+  &__specialist {
+    max-width: 270px;
+    flex-wrap: wrap;
+    background-color: var(--primary-bgc);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 }

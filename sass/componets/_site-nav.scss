@@ -1,4 +1,14 @@
-/* sete nav*/
+/* позиционирование nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  &__item {
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
 
 .site-nav__label {
   position: relative;
@@ -13,32 +23,19 @@
   &:focus {
     color: $accent-color;
   }
-}
-
-/* позиционирование nav */
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-  &__item {
-    margin-right: 50px;
-  }
-  &__item:last-child {
-    margin-right: 0;
-  }
-}
-
-.current {
-  color: $accent-color;
-  &::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    transform: translate(0, 20%);
-    width: 100%;
-    height: 4px;
-    background-color: $accent-color;
-    border-radius: 2px;
+  &--current {
+    color: $accent-color;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      transform: translate(0, 20%);
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }

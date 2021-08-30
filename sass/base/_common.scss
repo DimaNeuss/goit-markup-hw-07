@@ -1,5 +1,5 @@
 body {
-  background-color: $whitе-color-text;
+  background-color: "$whitе-color-text";
   color: $text-color;
   font-family: Roboto, Arial, sans-serif;
   letter-spacing: 0.03em;
@@ -31,14 +31,35 @@ a {
   display: flex;
   align-items: center;
 }
-.footer {
-  background: $background-color;
-  padding: 60px 0;
-}
+
 .title {
   color: $text-color;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.page-header {
+  border-bottom: 1px solid $header-line-color;
+}
+.section {
+  padding: 94px 0;
+}
+.text-hidden {
+  visibility: hidden;
+  font-size: 0;
+}
+input {
+  outline: none;
+}
+.section-team {
+  background: $filter__background-color;
 }
