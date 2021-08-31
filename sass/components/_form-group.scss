@@ -23,8 +23,8 @@
   &__input:focus {
     border: 1px solid $accent-color;
   }
-  &__input:hover + .form__icon,
-  &__input:focus + .form__icon {
+  &__input:hover + &__icon,
+  &__input:focus + &__icon {
     fill: $accent-color;
   }
   &__input:focus-within {

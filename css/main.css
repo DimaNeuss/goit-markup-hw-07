@@ -851,8 +851,8 @@ input {
   border: 1px solid #2196f3;
 }
 
-.form-group__input:hover + .form__icon,
-.form-group__input:focus + .form__icon {
+.form-group__input:hover + .form-group__icon,
+.form-group__input:focus + .form-group__icon {
   fill: #2196f3;
 }
 
