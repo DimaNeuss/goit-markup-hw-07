@@ -13,12 +13,10 @@
   padding: 10px 32px;
   min-width: 200px;
   @include border(1px, transparent);
-  transition: background-color 250ms $timing-function,
-    box-shadow 250ms $timing-function;
+  transition: background-color 250ms $timing-function;
   &:hover,
   &:focus {
     background-color: $hover-button;
-    @extend %box-shadow;
   }
 }
 .secondary__button {
@@ -28,11 +26,10 @@
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-left: 8px;
   @include border(0px, transparent);
   transition: background-color 250ms $timing-function;
   transition: box-shadow 250ms $timing-function;
-  @include transition(background-color);
-  @include transition(box-shadow);
   &:hover,
   &:focus {
     color: $whitе-color-text;

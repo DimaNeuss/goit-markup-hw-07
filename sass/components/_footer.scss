@@ -1,17 +1,17 @@
 .footer {
   background: $background-color;
   padding: 60px 0;
-  &-box {
+  &__box {
     @extend %flex;
     align-items: center;
   }
-  &-social {
+  &__social {
     margin-left: 70px;
   }
-  &-form {
+  &__form {
     margin-left: auto;
   }
-  &-disription {
+  &__disription {
     margin: 0;
     margin-bottom: 20px;
     height: 16px;
@@ -21,15 +21,6 @@
     color: $whitе-color-text;
   }
 }
-
-.social-title {
-  margin-bottom: 20px;
-  @include style(700, 14px, 1.2);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $whitе-color-text;
-}
-
 .subscribe-form {
   @extend %flex;
   justify-content: space-between;

@@ -3,7 +3,7 @@
   @extend %flex;
   justify-content: center;
   margin-bottom: 50px;
-  & .filter-element:not(:first-child) {
+  &__element:first-child {
     margin-left: 8px;
   }
 }
