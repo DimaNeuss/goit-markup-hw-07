@@ -56,13 +56,13 @@
     height: 18px;
     transition: fill 250ms $timing-function;
   }
-  &__btn {
-    text-align: center;
-  }
   &__input-group-absolute {
     position: relative;
   }
   & .comment {
     margin-bottom: 20px;
+  }
+  &__btn {
+    text-align: center;
   }
 }
