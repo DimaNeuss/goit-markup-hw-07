@@ -9,6 +9,9 @@
     appearance: none;
     position: absolute;
   }
+  &__text {
+    text-decoration: revert;
+  }
   &__policy::before {
     content: "";
     display: inline-flex;

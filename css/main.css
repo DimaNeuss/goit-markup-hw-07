@@ -928,6 +928,11 @@ input {
   position: absolute;
 }
 
+.checkbox__text {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+
 .checkbox__policy::before {
   content: "";
   display: -webkit-inline-box;
