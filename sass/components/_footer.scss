@@ -3,7 +3,7 @@
   padding: 60px 0;
   &__box {
     @extend %flex;
-    align-items: center;
+    align-items: baseline;
   }
   &__social {
     margin-left: 70px;
@@ -38,8 +38,9 @@
     background: transparent;
   }
   &__button {
-    @extend %flex;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 10px;
   }
   &__icon {

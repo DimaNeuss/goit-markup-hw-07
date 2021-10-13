@@ -1,5 +1,6 @@
 .checkbox {
-  margin: 20px 0 30px 12px;
+  margin-bottom: 30px;
+  padding-left: 12px;
   &__label {
     display: inline-block;
     @include style(400, 14px, 1.8);

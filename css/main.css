@@ -256,7 +256,7 @@ summary {
   display: list-item;
 }
 
-.header, .site-nav, .contacts, .contacts__link, .features, .work, .team, .social-links, .social-links__icon, .client, .modal__button-close, .form-group, .filter, .projects, .projects__overlay, .footer__box, .subscribe-form, .subscribe-form__input, .subscribe-form__button {
+.header, .site-nav, .contacts, .contacts__link, .features, .work, .team, .social-links, .social-links__icon, .client, .modal__button-close, .form-group, .filter, .projects, .projects__overlay, .footer__box, .subscribe-form, .subscribe-form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,10 +355,6 @@ input {
   background: #f5f4fa;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-}
-
 .logo {
   color: #2196f3;
   font-family: Raleway;
@@ -440,6 +436,7 @@ input {
   font-size: 14px;
   line-height: 1.1;
   font-style: normal;
+  padding: 30px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -461,6 +458,10 @@ input {
 }
 
 /*коннтакты footer*/
+.contacts-footer {
+  margin-top: 20px;
+}
+
 .contacts-footer__link {
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
@@ -870,6 +871,7 @@ input {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  margin-bottom: 20px;
 }
 
 .form-group__comment:hover, .form-group__comment:focus {
@@ -886,7 +888,9 @@ input {
 
 .form-group__icon {
   position: absolute;
-  top: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 10px;
   width: 18px;
   height: 18px;
@@ -907,7 +911,8 @@ input {
 }
 
 .checkbox {
-  margin: 20px 0 30px 12px;
+  margin-bottom: 30px;
+  padding-left: 12px;
 }
 
 .checkbox__label {
@@ -1061,9 +1066,9 @@ input {
 }
 
 .footer__box {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .footer__social {
@@ -1108,9 +1113,16 @@ input {
 }
 
 .subscribe-form__button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 10px;
 }
 
